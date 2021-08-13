@@ -5,8 +5,8 @@
 
 setlocal
 
-:: Путь к исходному файлу передать в переменную %path%
+:: Путь к исходному файлу передать в переменную %libfile%
 set lib="%~dp0..\lib"
-set path=%lib%\TDeploy1C\TDeploy1C.os
+set libfile=%lib%\TDeploy1C\TDeploy1C.os
 
-"C:\Program Files\OneScript\bin\oscript.exe" %path% %*
+"C:\Program Files\OneScript\bin\oscript.exe" %libfile% %*
