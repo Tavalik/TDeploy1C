@@ -16,57 +16,57 @@
 ### Поддерживаемые сценарии:
 
 Общие:
-    - Wait - Ждать
-    - RunApp[1|2|3|4|5][NoWaitCompletion] - ЗапуститьПриложение[1|2|3|4|5][НеЖдатьЗавершения]
-    - WriteStatusToFile - ЗаписатьСтатусВФайл
-			Записывает результат выполнения сценария в файл "TDeploy_Status.txt" в каталоге сценария: 
-			0 - ошибок не было, 1 - были ошибки
+- Wait - Ждать
+- RunApp[1|2|3|4|5][NoWaitCompletion] - ЗапуститьПриложение[1|2|3|4|5][НеЖдатьЗавершения]
+- WriteStatusToFile - ЗаписатьСтатусВФайл
+        Записывает результат выполнения сценария в файл "TDeploy_Status.txt" в каталоге сценария: 
+        0 - ошибок не было, 1 - были ошибки
 
 Сеансы:	
-    - GetListOfSessions - ПолучитьСписокСеансов
-    - CloseAllSessions - ЗавершитьВсеСеансы
-    - LockStartSession - УстановитьБлокировкуНачалаСеансов
-    - UnlockStartSessions - СнятьБлокировкуНачалаСеансов
-    - LockScheduledJobs - УстановитьБлокировкуРегламентныхЗаданий
-    - UnlockScheduledJobs - СнятьБлокировкуРегламентныхЗаданий
+- GetListOfSessions - ПолучитьСписокСеансов
+- CloseAllSessions - ЗавершитьВсеСеансы
+- LockStartSession - УстановитьБлокировкуНачалаСеансов
+- UnlockStartSessions - СнятьБлокировкуНачалаСеансов
+- LockScheduledJobs - УстановитьБлокировкуРегламентныхЗаданий
+- UnlockScheduledJobs - СнятьБлокировкуРегламентныхЗаданий
 
 Запуск 1С:
-    - StartEnterprise[ThinClient][TestManager][WithProcessing[1|2|3|4|5]][ClearCache][NoWaitCompletion] - ЗапуститьПредприятие[ТонкийКлиент][МенеджерТестирования][СОбработкой[1|2|3|4|5]][ОчиститьКеш][НеЖдатьЗавершения]
-    - StartDesigner[NoWaitCompletion] - ЗапуститьКонфигуратор[НеЖдатьЗавершения]
+- StartEnterprise[ThinClient][TestManager][WithProcessing[1|2|3|4|5]][ClearCache][NoWaitCompletion] - ЗапуститьПредприятие[ТонкийКлиент][МенеджерТестирования][СОбработкой[1|2|3|4|5]][ОчиститьКеш][НеЖдатьЗавершения]
+- StartDesigner[NoWaitCompletion] - ЗапуститьКонфигуратор[НеЖдатьЗавершения]
 
 Конфигурация:
-    - CheckChangesMainCfg - ПроверитьИзмененияОсновнойКонфигурации 
-    	В случае, если есть изменения, генерируется ошибка
-    - UpdateDBCfg - ОбновитьКонфигурациюБазыДанных
-    - DumpCfg - СохранитьКонфигурацию
-    - LoadCfg - ЗагрузитьКонфигурацию
-    - MergeCfg - ОбъединитьКонфигурацию 
+- CheckChangesMainCfg - ПроверитьИзмененияОсновнойКонфигурации 
+    В случае, если есть изменения, генерируется ошибка
+- UpdateDBCfg - ОбновитьКонфигурациюБазыДанных
+- DumpCfg - СохранитьКонфигурацию
+- LoadCfg - ЗагрузитьКонфигурацию
+- MergeCfg - ОбъединитьКонфигурацию 
 
 Расширения:
-    - LoadExtension[1|2|3|4|5] - ЗагрузитьРасширение[1|2|3|4|5]
+- LoadExtension[1|2|3|4|5] - ЗагрузитьРасширение[1|2|3|4|5]
 
 Работа с хранилищем:
-    - CheckChangesInRepository - ПроверитьИзмененияВХранилище 
-        В случае, если изменений нет, сценарий прекращается
-    - ConfigurationRepositoryUpdateCfg - ОбновитьКонфигурациюИзХранилища
-    - ConfigurationRepositoryLock - ЗахватитьОбъектыИзХранилища
-    - ConfigurationRepositoryUnLock - ОтменитьЗахватОбъектовИзХранилища
-    - ConfigurationRepositoryCommit[UnLock] - ПоместитьОбъектыВХранилище[ОтменитьЗахват]
-    - ConfigurationRepositoryBindCfg - ПодключитьсяКХранилищу
-    - ConfigurationRepositoryUnbindCfg  - ОтключитьсяОтХранилища
-    - ConfigurationRepositoryDumpCfg - СохранитьКонфигурациюХранилища
-    - ConfigurationRepositoryReport - ОтчетПоИсторииХранилища
+- CheckChangesInRepository - ПроверитьИзмененияВХранилище 
+    В случае, если изменений нет, сценарий прекращается
+- ConfigurationRepositoryUpdateCfg - ОбновитьКонфигурациюИзХранилища
+- ConfigurationRepositoryLock - ЗахватитьОбъектыИзХранилища
+- ConfigurationRepositoryUnLock - ОтменитьЗахватОбъектовИзХранилища
+- ConfigurationRepositoryCommit[UnLock] - ПоместитьОбъектыВХранилище[ОтменитьЗахват]
+- ConfigurationRepositoryBindCfg - ПодключитьсяКХранилищу
+- ConfigurationRepositoryUnbindCfg  - ОтключитьсяОтХранилища
+- ConfigurationRepositoryDumpCfg - СохранитьКонфигурациюХранилища
+- ConfigurationRepositoryReport - ОтчетПоИсторииХранилища
 
 Файлы:
-    - DeleteFiles[Cf|dt|Bak|Trn][СurrentBase] - УдалитьФайлы[Cf|dt|Bak|Trn][ТекущейБазы]
-    - CreateFileForRepositoryLockFromReport - СоздатьФайлДляЗахватаОбъектовПоФайлуИсторииХранилища
-    - CreateFileForRepositoryLock - СоздатьФайлДляЗахватаОбъектов
+- DeleteFiles[Cf|dt|Bak|Trn][СurrentBase] - УдалитьФайлы[Cf|dt|Bak|Trn][ТекущейБазы]
+- CreateFileForRepositoryLockFromReport - СоздатьФайлДляЗахватаОбъектовПоФайлуИсторииХранилища
+- CreateFileForRepositoryLock - СоздатьФайлДляЗахватаОбъектов
 
 SQL:
-    - SQLBackup[Full|Differential|Log][CopyOnly] - SQLРезервнаяКопия[Full|Differential|Log][CopyOnly]
-    - SQLRestore - SQLВосстановитьИзРезервнойКопии
+- SQLBackup[Full|Differential|Log][CopyOnly] - SQLРезервнаяКопия[Full|Differential|Log][CopyOnly]
+- SQLRestore - SQLВосстановитьИзРезервнойКопии
 
 GIT:
-    - GitPull[1|2|3|4|5] - ОбновитьИзГитРепозитория[1|2|3|4|5]
+- GitPull[1|2|3|4|5] - ОбновитьИзГитРепозитория[1|2|3|4|5]
 
 
